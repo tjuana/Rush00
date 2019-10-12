@@ -1,11 +1,3 @@
-<?php
-    session_start();
-    if (!file_exists("database/products.db") || !file_exists("database/categories.db")) {
-        header("Location: install.php");
-    }
-    $categories_file = file_get_contents("database/categories.db");
-    $categories = unserialize($categories_file);
-?>
 
 <!DOCTYPE html>
 <html>
